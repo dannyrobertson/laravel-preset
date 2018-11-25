@@ -26,10 +26,12 @@ class Preset extends DannyPreset
 
     public static function updatePackageArray($packages)
     {
-        return Arr::except($packages, [
+        return array_merge([
+            '@fortawesome/fontawesome-free' => '^5.5.0'
+        ], Arr::except($packages, [
             'lodash',
             'vue'
-        ]);
+        ]));
     }
 
     public static function updateResources()
