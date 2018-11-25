@@ -1,0 +1,22 @@
+{
+    "name": "dannyrobertson/laravel-preset",
+    "description": "My default Laravel preset.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Danny Robertson",
+            "email": "danny@dannyrobertson.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Danny\\LaravelPreset\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["Danny\\LaravelPreset\\DannyServiceProvider"]
+        }
+    }
+}
