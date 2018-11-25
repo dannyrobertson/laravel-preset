@@ -12,7 +12,7 @@ class Preset extends DannyPreset
 {
     public static function install()
     {
-        // static::makeAuth();
+        static::makeAuth();
         static::updatePackages();
         static::updatePackages();
         static::updateResources();
