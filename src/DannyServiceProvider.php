@@ -2,7 +2,7 @@
 
 namespace Danny\LaravelPreset;
 
-use Illuminate\Foundation\Console\PresetCommand;
+use Laravel\Ui\UiCommand;
 use Illuminate\Support\ServiceProvider;
 
 class DannyServiceProvider extends ServiceProvider
@@ -14,7 +14,7 @@ class DannyServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        PresetCommand::macro('danny', function ($command) {
+        UiCommand::macro('danny', function ($command) {
             Preset::install();
 
             $command->info('All finished! Please compile your assets, and you are all set to go!');

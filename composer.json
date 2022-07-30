@@ -9,6 +9,10 @@
         }
     ],
     "minimum-stability": "stable",
+    "require": {
+        "laravel/framework": "^7.0",
+        "laravel/ui": "^3.0"
+    },
     "autoload": {
         "psr-4": {
             "Danny\\LaravelPreset\\": "src"
